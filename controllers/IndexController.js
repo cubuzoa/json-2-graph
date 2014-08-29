@@ -52,8 +52,8 @@ module.exports = function( app ) {
                   xkey: '0',
                   ykeys: xKeys,
                   labels: labels,
-                  pointSize: 2,
-                  hideHover: 'auto'
+                  hideHover: false,
+                  postUnits: ' KB'
                 }
             });
           });
