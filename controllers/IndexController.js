@@ -16,7 +16,6 @@ module.exports = function( app ) {
         
         form.parse(req, function(err, fields, files) {
           fs.readFile(files.file.path, function (err, data) {
-            res.end(files.file.path);
             bufferString = data.toString(); 
             bufferStringSplit = bufferString.split('\n'); 
             var graphData = [];
